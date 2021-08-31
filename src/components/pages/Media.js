@@ -1,9 +1,11 @@
 import React from 'react';
 import './Media.css';
 import MediaItem from './MediaItem';
+import styled from 'styled-components';
 
 function Media() {
   return (
+    <Container>
     <div className='media'>
       <h1>Recent Events</h1>
       <div className='media__container'>
@@ -45,7 +47,18 @@ function Media() {
         </div>
       </div>
     </div>
+    </Container>
   );
 }
 
 export default Media;
+
+const Container = styled.div`
+    background-image: url('/images/img-2.jpg');
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    
+`

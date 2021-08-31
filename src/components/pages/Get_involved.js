@@ -1,23 +1,20 @@
 import React from 'react';
 import '../../App.css';
 import styled from 'styled-components';
-import Footer from '../Footer';
 
- function GetInvolved() {
+
+export default function GetInvolved() {
   return (
-  <React.Fragment>
-  <Get><h1 className='get_involved'>LIKE & SUBSCRIBE</h1></Get>
-  <Footer />
-  </React.Fragment>)
+    <Container><h1 className='news'>Volunteer</h1></Container>
+    )
 }
 
-export default  GetInvolved
-
-const Get = styled.div`
+const Container = styled.div`
     background-image: url('/images/img-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    
 `

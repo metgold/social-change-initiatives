@@ -6,7 +6,7 @@
   }
   
   .home,
-  .news,
+  .meet,
   .our_team,
   .get_involved,
   .media {
@@ -18,21 +18,22 @@
   }
   
   .our_team {
-    /*background-image: url('\images\img-2.jpg');*/
+    /* background-image: url('/images/img-2.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #242424;
     font-size: 100px;
   }
   
-  .news {
+  .meet {
     /*background-image: url('\images\img-1.jpg');*/
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: #242424;
+    font-size: 20px;
+    text-align: left;
   }
   
   .get_involved {
@@ -40,6 +41,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #242424;
     font-size: 100px;
   }

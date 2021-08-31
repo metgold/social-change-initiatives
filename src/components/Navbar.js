@@ -29,7 +29,7 @@ function Navbar() {
           <NavBar>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    SOCIAL CHANGE INITIATIVES<i className='fab fa-typo3' />
+                    SOCIAL CHANGE INITIATIVE<i className='fab fa-typo3' />
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -43,7 +43,7 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                         <Link to='/News' className='nav-links' onClick={closeMobileMenu}>
-                            News
+                            Meet Aspirant
                         </Link>
                         </li>
                         <li className='nav-item'>

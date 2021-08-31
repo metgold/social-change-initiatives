@@ -3,8 +3,17 @@ import '../../App.css';
 import styled from 'styled-components'
 
 export default function OurTeam() {
-  return <h1 className='our_team'>Our Team</h1>;
+  return (
+    <Container><h1 className='our_team'>Our Team</h1></Container>
+    )
 }
-const h1 = styled.div`
-    background-image: url('\images\img-2.jpg');
+
+const Container = styled.div`
+    background-image: url('/images/img-9.jpg');
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    
 `
