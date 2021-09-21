@@ -1,0 +1,8 @@
+.home1{
+    width: 50%;
+    max-height: 50px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}

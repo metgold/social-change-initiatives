@@ -3,13 +3,15 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
   }
   
   .home,
   .meet,
   .our_team,
   .get_involved,
-  .media {
+  .values
+  /* .media*/ { 
     display: flex;
     height: 90vh;
     align-items: center;
@@ -32,15 +34,46 @@
     background-size: fill;
     background-repeat: no-repeat;
     color: #242424;
-    font-size: 20px;
-    text-align: left;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: right;
   }
   
-  .get_involved {
-    /*background-image: url('\images\img-8.jpg');*/
+ /*  .get_involved {
+    /*background-image: url('\images\img-8.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #242424;
     font-size: 100px;
+  } */
+
+  .media {
+    /*background-image: url('\images\img-1.jpg');*/
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #242424;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .chatbot {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .values {
+    /*background-image: url('\images\img-1.jpg');*/
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #242424;
+    font-size: 20px;
+    text-align: left;
   }

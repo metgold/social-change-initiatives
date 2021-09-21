@@ -1,4 +1,5 @@
 import React from 'react';
+import Roll from 'react-reveal/Roll';
 import './Cards.css';
 import CardItem from './CardItem';
 
@@ -6,6 +7,7 @@ function Cards() {
   return (
     <div className='cards'>
       <h1>Recent Events</h1>
+      <Roll right>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -44,6 +46,7 @@ function Cards() {
           </ul>
         </div>
       </div>
+      </Roll>
     </div>
   );
 }

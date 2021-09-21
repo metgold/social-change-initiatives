@@ -1,20 +1,53 @@
 import React from 'react';
-import '../../App.css';
-import styled from 'styled-components';
+import { auth } from '../../firebase/Firebase.utils';
+import HeaderG from '../header/Header';
+// import Navbar from '../Navbar';
+import "./Get_involved.scss"
+import LogIn from './login_signup/Login';
 
 
-export default function GetInvolved() {
-  return (
-    <Container><h1 className='news'>Volunteer</h1></Container>
-    )
-}
 
-const Container = styled.div`
-    background-image: url('/images/img-2.jpg');
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    
-`
+// import Footer from '../Footer';
+
+
+
+class GetInvolved extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            currentUser: null
+        }
+    }
+
+    unsubscribeFromAuth = null
+
+    componentDidMount() {
+        this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+            this.setState({ currentUser: user });
+            console.log(user)
+        })
+    }
+
+    componentWillUnmount() {
+        this.unsubscribeFromAuth();
+    }
+
+    render() {
+            return (
+        <React.Fragment>
+                <div className="get_involved">
+                    <HeaderG currentUser={this.state.currentUser}/>
+                   { // <Navbar/>
+                    <LogIn/>
+                    /* <Footer/> */}
+                </div>
+        </React.Fragment>
+        )
+    }
+    }
+
+ 
+
+export default GetInvolved
+

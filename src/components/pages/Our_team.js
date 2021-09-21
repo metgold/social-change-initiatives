@@ -1,10 +1,16 @@
 import React from 'react';
 import '../../App.css';
+import Footer from '../Footer';
 import styled from 'styled-components'
 
 export default function OurTeam() {
   return (
-    <Container><h1 className='our_team'>Our Team</h1></Container>
+    <React.Fragment>
+      <Container>
+        <h1 className='our_team'>Our Team</h1>
+      </Container>
+      <Footer />
+    </React.Fragment>
     )
 }
 

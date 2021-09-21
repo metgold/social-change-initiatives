@@ -8,7 +8,7 @@ video {
   
   .hero-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,8 +20,8 @@ video {
   
   .hero-container > h1 {
     color: #fff;
-    font-size: 100px;
-    margin-top: -100px;
+    font-size: 70px;
+    margin-top: -250px;
   }
   
   .hero-container > p {
@@ -32,14 +32,119 @@ video {
       'Lucida Sans', Arial, sans-serif;
   }
   
+  .centre{
+    text-align: center;
+    font-size: 25px;
+  }
+
   .hero-btns {
-    margin-top: 32px;
+    margin-top: 70px;
   }
   
   .hero-btns .btn {
     margin: 6px;
   }
+
+  .slides input{
+    display: none;
+  }
+
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+
+  .slide{
+    width: 50%;
+    transition: 1s;
+    object-fit: contain;
+  }
+
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
   
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left: -60%;
+  }
+
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
   .fa-play-circle {
     margin-left: 4px;
   }
