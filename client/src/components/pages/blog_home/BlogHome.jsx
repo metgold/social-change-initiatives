@@ -13,6 +13,7 @@ function BlogHome() {
     const {search} = useLocation();
     useEffect(()=>{
         const fetchPosts = async ()=>{
+            
            const res = await axios.get("/Posts"+search);
            setPosts(res.data);
         };
